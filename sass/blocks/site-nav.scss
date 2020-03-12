@@ -1,0 +1,26 @@
+.site-nav__item {
+  display: none;
+
+  a{
+    display: block;
+    padding: 16px 21px 15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #826550;
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid #71543f;
+  }
+
+  &--active{
+    display: block;
+    text-align: center;
+
+    a {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+}

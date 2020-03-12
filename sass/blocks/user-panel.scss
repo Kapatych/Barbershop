@@ -1,0 +1,22 @@
+.user-panel__item {
+  display: none;
+}
+
+.user-panel__login {
+  position: relative;
+  display: block;
+  padding: 16px 21px 16px 50px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-panel__login-icon{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  opacity: .3;
+}

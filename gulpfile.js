@@ -6,7 +6,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 
 function style() {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./sass/style.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
