@@ -1,5 +1,6 @@
-.user-panel__item {
-  display: none;
+.user-panel {
+  display: flex;
+  align-items: center;
 }
 
 .user-panel__login {
@@ -19,4 +20,31 @@
   height: 16px;
   fill: currentColor;
   opacity: .3;
+}
+
+@media (max-width: 767.98px) {
+  .user-panel {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-panel__login {
+    span {
+      display: none;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .user-panel__login {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+  }
 }
