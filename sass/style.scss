@@ -26,7 +26,7 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .hidden {
@@ -56,3 +56,4 @@ img {
 @import "blocks/nav";
 @import "blocks/site-nav";
 @import "blocks/user-panel";
+@import "blocks/stats";

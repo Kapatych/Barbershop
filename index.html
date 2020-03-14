@@ -40,9 +40,11 @@
         <ul class="nav__list user-panel">
           <li class="user-panel__item">
             <a class="user-panel__login" href="#">
-              <svg class="user-panel__login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="#fff">
+              <svg class="user-panel__login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                   height="16" fill="#fff">
                 <path d="M0 7h7.01V4.06l3.95 3.95-3.95 3.9V9.06L0 9.02V7z"></path>
-                <path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z"></path></svg>
+                <path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z"></path>
+              </svg>
               <span>Войти</span>
             </a>
           </li>
@@ -54,37 +56,39 @@
 </header>
 
 <main class="main">
-  <h1 class="main-title visually-hidden">Барбершоп «Бородинский» – истинно мужская классика</h1>
+  <h1 class="hidden">Барбершоп «Бородинский» – истинно мужская классика</h1>
   <section class="stats">
-    <div class="stats__header">
-      <h2 class="visually-hidden">Статистика Барбершопа</h2>
-      <b class="stats__slogan">Стрижка у нас это выгодно!</b>
-      <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-      <small class="stats__legend stats__legend--top">
+    <div class="stats__container container">
+      <div class="stats__header">
+        <h2 class="hidden">Статистика Барбершопа</h2>
+        <p class="stats__slogan">Стрижка у нас <br> это выгодно!</p>
+        <p class="stats__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <span class="stats__legend stats__legend--top">
         <sup>*</sup> — приведённые данные ложь
-      </small>
-    </div>
-    <table class="stats__list">
-      <tr>
-        <td class="stats__value">1 500 <sup>*</sup></td>
-        <td class="stats__field">рублей<br>вложений</td>
-      </tr>
-      <tr>
-        <td class="stats__value">7 200 <sup>*</sup></td>
-        <td class="stats__field">секунд<br>времени мастера</td>
-      </tr>
-      <tr>
-        <td class="stats__value">90 000 <sup>*</sup></td>
-        <td class="stats__field">постриженных<br>волос</td>
-      </tr>
-      <tr>
-        <td class="stats__value">500 000 <sup>*</sup></td>
-        <td class="stats__field">лайков<br>и комплиментов</td>
-      </tr>
-    </table>
-    <small class="stats__legend stats__legend--bottom">
+      </span>
+      </div>
+      <ul class="stats__list">
+        <li class="stats__item">
+          <p class="stats__value">1 500 <sup>*</sup></p>
+          <p class="stats__field">рублей <br>вложений</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">7 200</p>
+          <p class="stats__field">секунд <br>времени мастера</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">90 000</p>
+          <p class="stats__field">постриженных <br>волос</p>
+        </li>
+        <li class="stats__item">
+          <p class="stats__value">500 000 <sup>*</sup></p>
+          <p class="stats__field">лайков <br>и комплиментов</p>
+        </li>
+      </ul>
+      <span class="stats__legend stats__legend--bottom">
       <sup>*</sup> — приведённые данные ложь
-    </small>
+    </span>
+    </div>
   </section>
 
   <section class="advantages">
@@ -218,17 +222,17 @@
   </div>
 </footer>
 <script>
-  const nav = document.querySelector('.nav');
-  const toggleButton = document.querySelector('.nav__toggle');
-  const underlay = document.querySelector('.nav__underlay');
+    const nav = document.querySelector('.nav');
+    const toggleButton = document.querySelector('.nav__toggle');
+    const underlay = document.querySelector('.nav__underlay');
 
-  const toggleNav = (e) => {
-      e.preventDefault();
-      nav.classList.toggle('nav--opened')
-  };
+    const toggleNav = (e) => {
+        e.preventDefault();
+        nav.classList.toggle('nav--opened')
+    };
 
-  toggleButton.addEventListener('click', (e) => toggleNav(e));
-  underlay.addEventListener('click', (e) => toggleNav(e));
+    toggleButton.addEventListener('click', (e) => toggleNav(e));
+    underlay.addEventListener('click', (e) => toggleNav(e));
 
 </script>
 </body>

@@ -1,0 +1,183 @@
+.stats {
+  background-color: #242424;
+}
+
+.stats__header {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.stats__slogan {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stats__text {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.stats__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+
+  &:nth-child(odd) {
+    background: #404040;
+  }
+
+  &:nth-child(even) {
+    background: #4e4e4e;
+  }
+}
+
+.stats__value {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.stats__field {
+  margin: 0;
+  text-align: right;
+  color: #f7f4f1;
+}
+
+.stats__legend {
+  display: block;
+  opacity: 0.3;
+  font-size: 20px;
+  text-align: center;
+
+  &--top {
+    display: none;
+  }
+
+  &--bottom {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .stats {
+    background-color: #353535;
+  }
+
+  .stats__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stats__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -184px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: -22px;
+      width: 23px;
+      height: 23px;
+      display: block;
+      background: url("../../img/stats-triangle.png");
+    }
+  }
+
+  .stats__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stats__item {
+    display: block;
+    flex-basis: 50%;
+    padding: 32px;
+
+    &:nth-child(3) {
+      background: #353535;
+    }
+
+    &:nth-child(4) {
+      background: #404040;
+    }
+  }
+
+  .stats__value {
+    font-size: 72px;
+  }
+
+  .stats__field {
+    margin-top: 5px;
+    text-align: left;
+
+    br {
+      display: none;
+    }
+  }
+
+  .stats__slogan {
+    flex-basis: 50%;
+    padding: 0;
+    font-size: 40px;
+    text-transform: none;
+  }
+
+  .stats__text {
+    flex-basis: 50%;
+    margin-top: 0;
+    padding: 4px 39px 0;
+    line-height: 27px;
+  }
+
+  .stats__legend {
+
+    &--top {
+      display: block;
+      margin-top: 19px;
+    }
+
+    &--bottom {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .stats__header {
+    display: block;
+    margin-top: -159px;
+    flex-basis: calc(100% / 3);
+  }
+
+  .stats__text {
+    padding: 0;
+    margin-top: 47px;
+    max-width: 206px;
+  }
+
+  .stats__list {
+    margin-top: -159px;
+    flex-basis: calc(100% / 3 * 2);
+  }
+
+  .stats__legend {
+
+    &--top {
+      margin-top: 30px;
+    }
+  }
+}
