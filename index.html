@@ -20,7 +20,7 @@
         <span class="hidden">Открыть меню</span>
       </button>
       <div class="nav__content">
-        <ul class="nav__list site-nav">
+        <ul class="nav__list site-nav list">
           <li class="site-nav__item site-nav__item--active">
             <a class="site-nav__link" href="#">Главная</a>
           </li>
@@ -37,7 +37,7 @@
             <a class="site-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <ul class="nav__list user-panel">
+        <ul class="nav__list user-panel list">
           <li class="user-panel__item">
             <a class="user-panel__login" href="#">
               <svg class="user-panel__login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
@@ -68,7 +68,7 @@
         <sup>*</sup> — приведённые данные ложь
       </span>
       </div>
-      <ul class="stats__list">
+      <ul class="stats__list list">
         <li class="stats__item">
           <p class="stats__value">1 500 <sup>*</sup></p>
           <p class="stats__field">рублей <br>вложений</p>
@@ -95,7 +95,7 @@
   <section class="advantages">
     <div class="advantages__container container slider">
       <h2 class="hidden">Наши преимущества</h2>
-      <ul class="advantages__list slider__list">
+      <ul class="advantages__list slider__list list">
         <li class="advantages__item advantages__item--fast slider__item slider__item--active">
           <h3 class="advantages__title">Быстро</h3>
           <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый
@@ -121,40 +121,50 @@
   </section>
 
   <section class="news">
-    <div class="news__wrapper">
-      <h2 class="news__title">Новости и акции</h2>
-      <ul class="news__list">
+    <div class="news__container container">
+      <h2 class="news__title title">Новости и акции</h2>
+      <ul class="news__list list">
         <li class="news__item">
           <time class="news__date" datetime="2020-03-01">
-            <b class="news__day">01</b> март
+            <b class="news__day">01</b>
+            <span class="news__month">март</span>
           </time>
-          <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время
-            стрижки.</p>
+          <a href="#" class="news__link">
+            <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время
+              стрижки.</p>
+          </a>
         </li>
         <li class="news__item">
           <time class="news__date" datetime="2020-02-20">
-            <b class="news__day">20</b> февр
+            <b class="news__day">20</b>
+            <span class="news__month">февр</span>
+
           </time>
-          <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и
-            наград пополнил наши стройные ряды. Спешите записаться!</p>
+          <a href="#" class="news__link">
+            <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и
+              наград пополнил наши стройные ряды. Спешите записаться!</p>
+          </a>
         </li>
         <li class="news__item">
           <time class="news__date" datetime="2020-02-10">
-            <b class="news__day">10</b> февр
+            <b class="news__day">10</b>
+            <span class="news__month">февр</span>
           </time>
-          <p class="news__text">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём
-            здесь подвох!</p>
+          <a href="#" class="news__link">
+            <p class="news__text">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём
+              здесь подвох!</p>
+          </a>
         </li>
       </ul>
-      <a class="news__to-all button" href="#">Показать все</a>
+      <a class="news__button button" href="#">Показать все</a>
     </div>
   </section>
 
   <section class="reviews">
-    <div class="reviews__wrapper slider">
-      <h2 class="reviews__title">Отзывы о нас</h2>
+    <div class="reviews__container container slider">
+      <h2 class="reviews__title title">Отзывы о нас</h2>
       <a class="reviews__write button" href="#">Оставить свой</a>
-      <div class="reviews__list slider__list">
+      <div class="reviews__list slider__list list">
         <blockquote class="reviews__item slider__item slider__item--active">
           <p class="reviews__author-picture">
             <img src="img/picture-travis.jpg" width="50" height="50" alt="Фото Трэвиса Баркера"
@@ -192,19 +202,19 @@
 </main>
 
 <footer class="footer">
-  <div class="footer__wrapper">
+  <div class="footer__container container">
     <div class="footer__contacts contacts">
       <b class="contacts__title">Барбершоп «Бородинский»</b>
       <p class="contacts__text">
         г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
-        <a class="contacts__phone" href="tel:+78121111111">
+        <a class="contacts__phone button" href="tel:+78121111111">
           <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 111-11-11
         </a>
       </p>
     </div>
     <div class="footer__social social">
       <b class="social__title">Давайте дружить!</b>
-      <ul class="social__list">
+      <ul class="social__list list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
         </li>

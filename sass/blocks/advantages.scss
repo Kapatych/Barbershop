@@ -15,12 +15,6 @@
   text-align: center;
 }
 
-.advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .advantages__item {
 
   &:before {
@@ -82,10 +76,9 @@
   .advantages__item{
     position: relative;
     padding: 38px 0 38px 125px;
-    border-top: 1px solid #494949;
 
-    &:first-child {
-      border-top: none;
+    &:not(:nth-child(1)) {
+      border-top: 1px solid #494949;
     }
 
     &:before {
@@ -131,6 +124,9 @@
   .advantages__item {
     flex-basis: calc(100%/3);
     padding: 0 40px;
-    border-right: 1px solid #494949;
+
+    &:not(:first-child) {
+      border-left: 1px solid #494949;
+    }
   }
 }

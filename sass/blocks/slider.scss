@@ -2,10 +2,6 @@
 
 }
 
-.slider__list {
-
-}
-
 .slider__item {
   display: none;
 
@@ -20,7 +16,6 @@
 }
 
 .slider__toggle {
-  margin: 0 0 0 23px;
   padding: 0;
   width: 7px;
   height: 7px;
@@ -29,8 +24,8 @@
   border: 1px solid #ffffff;
   outline: none;
 
-  &:first-child {
-    margin: 0;
+  &:not(:nth-child(1)) {
+    margin: 0 0 0 23px;
   }
 
   &--active {

@@ -50,10 +50,9 @@
   }
 
   .site-nav__item {
-    margin-left: 33px;
 
-    &:first-child {
-      margin-left: 0;
+    &:not(:nth-child(1)) {
+      margin-left: 33px;
     }
 
     &--active {
