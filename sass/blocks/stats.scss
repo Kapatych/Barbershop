@@ -3,7 +3,7 @@
 }
 
 .stats__header {
-  padding: 30px 40px;
+  padding: 26px 40px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -17,8 +17,9 @@
 }
 
 .stats__text {
-  margin-bottom: 0;
+  margin: 16px 0 0;
   font-size: 20px;
+  line-height: 27px;
 }
 
 .stats__list {
@@ -30,7 +31,7 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
-  padding: 25px 20px;
+  padding: 20px;
 
   &:nth-child(odd) {
     background: #404040;
@@ -45,6 +46,10 @@
   margin: 0;
   font-size: 40px;
   font-weight: bold;
+
+  sup {
+    font-size: 27px;
+  }
 }
 
 .stats__field {
@@ -64,7 +69,7 @@
   }
 
   &--bottom {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -108,7 +113,7 @@
     padding: 32px;
 
     &:nth-child(3) {
-      background: #353535;
+      background: #4e4e4e;
     }
 
     &:nth-child(4) {
@@ -139,7 +144,7 @@
   .stats__text {
     flex-basis: 50%;
     margin-top: 0;
-    padding: 4px 39px 0;
+    padding: 4px 35px 0;
     line-height: 27px;
   }
 
