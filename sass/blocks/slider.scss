@@ -18,17 +18,32 @@
   margin: 0;
   padding: 0;
 }
+
 .slider__toggle {
   margin: 0 0 0 23px;
   padding: 0;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   transform: rotate(45deg);
   background: transparent;
   border: 1px solid #ffffff;
   outline: none;
 
+  &:first-child {
+    margin: 0;
+  }
+
   &--active {
     background: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider__item {
+    display: block;
+  }
+
+  .slider__toggles {
+    display: none;
   }
 }

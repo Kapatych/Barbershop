@@ -57,6 +57,7 @@
 
 <main class="main">
   <h1 class="hidden">Барбершоп «Бородинский» – истинно мужская классика</h1>
+
   <section class="stats">
     <div class="stats__container container">
       <div class="stats__header">
@@ -262,11 +263,14 @@
             if (activeSlideIndex > sliderItems.length - 1) activeSlideIndex = 0;
             showSlide(activeSlideIndex);
             activeSlideIndex++;
-        }, delay)
+        }, delay);
+
     };
 
-    slider('advantages', 2000);
-    slider('reviews', 3000);
+    if (document.documentElement.clientWidth < 768) {
+        slider('advantages', 2000);
+        slider('reviews', 3000);
+    }
 
     ///
 
