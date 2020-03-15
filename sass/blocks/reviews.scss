@@ -1,0 +1,15 @@
+.reviews {
+  background-color: #f8f5f2;
+  color: #000000;
+}
+
+.reviews__container {
+  padding: 26px 0;
+}
+
+
+@media (min-width: 768px) {
+  .reviews__container {
+    padding: 40px 0;
+  }
+}
