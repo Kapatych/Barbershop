@@ -1,4 +1,9 @@
 .slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__list {
 
 }
 
@@ -10,9 +15,41 @@
   }
 }
 
+.slider__control {
+  flex-basis: 50px;
+  border: 1px solid #e5ddd5;
+  background: none;
+  outline: none;
+
+  &:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 12px;
+    height: 12px;
+    background: url("../../img/sprite.svg") -99px -61px no-repeat;
+  }
+
+  &--prev {
+
+    &:before {
+
+    }
+  }
+
+  &--next {
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
 .slider__toggles {
   margin: 0;
   padding: 0;
+  flex-basis: 100%;
 }
 
 .slider__toggle {
@@ -34,11 +71,7 @@
 }
 
 @media (min-width: 768px) {
-  .slider__item {
-    display: block;
-  }
-
-  .slider__toggles {
-    display: none;
+  .slider__list {
+    flex-basis: calc(100% - 100px);
   }
 }

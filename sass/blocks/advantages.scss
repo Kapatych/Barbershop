@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.advantages__wrapper {
+  display: block;
+}
+
 .advantages__item {
 
   &:before {
@@ -101,6 +105,14 @@
     &:after {
       height: 42px;
     }
+  }
+
+  .advantages__item {
+    display: block;
+  }
+
+  .advantages__toggles {
+    display: none;
   }
 }
 
