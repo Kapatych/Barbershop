@@ -966,7 +966,7 @@ img {
 
 @media (min-width: 1200px) {
   .advantages:after {
-    height: 65px; }
+    height: 62px; }
   .advantages__container {
     padding: 80px 0 35px; }
   .advantages__list {
@@ -1059,8 +1059,9 @@ img {
   margin: 5px 0 0; }
 
 @media (min-width: 768px) {
-  .news {
-    border-bottom: 1px solid #e5ddd5; }
+  /*.news {
+    border-bottom: 1px solid #e5ddd5;
+  }*/
   .news__container {
     display: -webkit-box;
     display: -ms-flexbox;
