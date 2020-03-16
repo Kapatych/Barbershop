@@ -5,10 +5,6 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-
-  &:hover {
-    color: #826550;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -64,15 +60,51 @@
 
   .site-nav__link {
     padding: 27px 0;
+
+    &:hover {
+      color: #826550;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .site-nav__item {
-    margin-left: 64px;
 
-    &:first-child {
-      margin-left: 30px;
+    &:not(:nth-child(1)) {
+      margin: 0;
+    }
+
+    &--active {
+      .site-nav__link {
+        background: none;
+
+        span {
+          background: linear-gradient(to right, #826550, #826550) 0 100%/100% 3px no-repeat;
+          padding-bottom: 25px;
+        }
+
+      }
+    }
+  }
+
+  .site-nav__link {
+    padding: 27px 32px;
+
+    &:hover {
+      color: #000000;
+      background: #ffffff;
+
+      span {
+        background: none;
+      }
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 

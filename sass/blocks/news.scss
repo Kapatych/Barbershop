@@ -8,10 +8,6 @@
   padding: 33px 19px 28px 20px;
 }
 
-.news__title {
-
-}
-
 .news__list {
   margin: 0;
   padding: 15px 0 0;
@@ -28,6 +24,36 @@
 
   &:not(:nth-child(-n + 2)) {
     display: none;
+  }
+
+  &:hover {
+    .news__date {
+      background: #826550;
+
+      &:after {
+        border-top-color: #826550;
+      }
+    }
+
+    .news__text {
+      color: #826550;
+      text-decoration: underline;
+    }
+  }
+
+  &:active {
+    .news__date {
+      background: #6a4d38;
+
+      &:after {
+        border-top-color: #6a4d38;
+      }
+    }
+
+    .news__text {
+      color: #6a4d38;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -51,7 +77,6 @@
     border-top: 10px solid #000;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-
   }
 }
 

@@ -24,24 +24,42 @@
 
 @media (max-width: 767.98px) {
   .user-panel {
-    display: none;
-  }
+     display: none;
+   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .user-panel__login {
     span {
       display: none;
     }
   }
 
+  .user-panel__login-icon {
+    &:hover {
+      color: #826550;
+      opacity: 1;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .user-panel__login {
-    display: block;
+    padding: 27px 32px 27px 50px;
     font-weight: bold;
     text-transform: uppercase;
+
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
 
     span {
       display: block;

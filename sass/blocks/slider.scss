@@ -3,10 +3,6 @@
   flex-wrap: wrap;
 }
 
-.slider__list {
-
-}
-
 .slider__item {
   display: none;
 
@@ -30,10 +26,15 @@
     background: url("../../img/sprite.svg") -99px -61px no-repeat;
   }
 
-  &--prev {
+  &:hover {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active {
+    background-color: #d5c9bd;
 
     &:before {
-
+      opacity: 0.3;
     }
   }
 
