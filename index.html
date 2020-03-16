@@ -178,9 +178,7 @@
                  alt="Фото Трэвиса Баркера">
             <div class="reviews__info">
               <p class="reviews__author">Трэвис Баркер</p>
-              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно
-                новую
-                татуировку!</p>
+              <p class="reviews__text">Спасибо за лысину! Заскочил побриться, чтобы было видно новую татуировку!</p>
             </div>
           </li>
           <li class="reviews__item slider__item">
@@ -195,7 +193,8 @@
                  alt="Фото Ивана Бородайло">
             <div class="reviews__info">
               <p class="reviews__author">Иван Бородайло</p>
-              <p class="reviews__text">В Бородинском ваша борода в надёжных руках! А фирменная стрижка просто огонь! </p>
+              <p class="reviews__text">В Бородинском ваша борода в надёжных руках! А фирменная стрижка просто
+                огонь! </p>
             </div>
           </li>
         </ul>
@@ -215,7 +214,7 @@
 <footer class="footer">
   <div class="footer__container container">
     <div class="footer__contacts contacts">
-      <b class="contacts__title">Барбершоп «Бородинский»</b>
+      <p class="contacts__title">Барбершоп Бородинский</p>
       <p class="contacts__text">
         г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
         <a class="contacts__phone button" href="tel:+78121111111">
@@ -224,21 +223,21 @@
       </p>
     </div>
     <div class="footer__social social">
-      <b class="social__title">Давайте дружить!</b>
+      <p class="social__title">Давайте дружить!</p>
       <ul class="social__list list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
+          <a class="social__link social__link--vk" href="#"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social__link social__link--fb" href="#"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--in" href="#">Мы в Инстаграме</a>
+          <a class="social__link social__link--in" href="#"></a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <p class="copyright__text">Разработано:</p>
       <a class="copyright__link button" href="">HTML Academy</a>
     </div>
   </div>
@@ -278,7 +277,7 @@
             sliderControls.forEach(item => {
                 item.addEventListener('click', () => {
                     if (item.classList.contains('slider__control--prev')) {
-                        (activeSlideIndex === 0 )
+                        (activeSlideIndex === 0)
                             ? activeSlideIndex = sliderItems.length - 1
                             : activeSlideIndex--;
                     } else {

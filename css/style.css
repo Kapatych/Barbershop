@@ -1185,3 +1185,175 @@ img {
 
 .footer__container {
   padding: 40px 20px; }
+
+.footer__contacts {
+  padding: 0 0 25px; }
+
+.footer__copyright {
+  padding: 33px 0 0; }
+
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 55px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__contacts {
+    padding: 0 0 48px; }
+  .footer__copyright {
+    padding: 0;
+    -ms-flex-preferred-size: 160px;
+        flex-basis: 160px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__social {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (min-width: 1200px) {
+  .footer__container {
+    padding: 55px 0 40px; }
+  .footer__contacts {
+    padding: 0; }
+  .footer__social {
+    -ms-flex-preferred-size: 165px;
+        flex-basis: 165px; } }
+
+.contacts__title {
+  margin: 0;
+  text-align: center; }
+
+.contacts__text {
+  margin: 12px 0 0;
+  text-align: center;
+  line-height: 27px; }
+
+.contacts__phone {
+  margin: 18px 0 0;
+  padding: 10px 0;
+  color: #ffffff;
+  border: 1px solid #3f3f3f; }
+
+.contacts__phone-mobile {
+  display: none; }
+
+@media (min-width: 768px) {
+  .contacts__title {
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .contacts__phone {
+    border: 0;
+    padding: 0;
+    text-align: left;
+    margin: 1px 0 0;
+    text-transform: initial;
+    font-weight: normal; }
+  .contacts__phone-mobile {
+    display: inline-block; } }
+
+.social__title {
+  margin: 0;
+  display: none; }
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -20px;
+  border-top: 1px solid #3f3f3f;
+  border-bottom: 1px solid #3f3f3f; }
+
+.social__item {
+  -ms-flex-preferred-size: calc(100% / 3);
+      flex-basis: calc(100% / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social__item:not(:first-child) {
+    border-left: 1px solid #3f3f3f; }
+
+.social__link {
+  width: 100%;
+  height: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social__link:before {
+    content: "";
+    display: block;
+    background: url("../../img/sprite.svg") no-repeat; }
+  .social__link--vk:before {
+    width: 23px;
+    height: 26px;
+    background-position: -100px -1px; }
+  .social__link--fb:before {
+    width: 18px;
+    height: 39px;
+    background-position: -128px -1px; }
+  .social__link--in:before {
+    width: 36px;
+    height: 36px;
+    background-position: -151px 0; }
+
+@media (min-width: 768px) {
+  .social__list {
+    margin: 0;
+    border: 1px solid #3f3f3f; } }
+
+@media (min-width: 1200px) {
+  .social__title {
+    display: block;
+    text-align: center; }
+  .social__list {
+    border: 0;
+    margin: 15px 0 0; }
+  .social__item {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 50px;
+        flex-basis: 50px;
+    min-height: 50px;
+    border: 1px solid #3f3f3f; }
+    .social__item:not(:first-child) {
+      margin-left: 5px; }
+  .social__link {
+    height: 50px; }
+    .social__link--vk:before {
+      width: 15px;
+      height: 17px;
+      background-position: -100px -31px; }
+    .social__link--fb:before {
+      width: 10px;
+      height: 21px;
+      background-position: -116px -31px; }
+    .social__link--in:before {
+      width: 19px;
+      height: 19px;
+      background-position: -75px 0; } }
+
+.copyright__text {
+  margin: 0;
+  text-align: center; }
+
+.copyright__link {
+  margin: 15px 0 0;
+  color: #ffffff;
+  border: 1px solid #3f3f3f; }

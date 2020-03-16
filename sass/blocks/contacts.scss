@@ -1,0 +1,42 @@
+.contacts__title {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts__text {
+  margin: 12px 0 0;
+  text-align: center;
+  line-height: 27px;
+}
+
+.contacts__phone {
+  margin: 18px 0 0;
+  padding: 10px 0;
+  color: #ffffff;
+  border: 1px solid #3f3f3f;
+}
+
+.contacts__phone-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contacts__title {
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .contacts__phone {
+    border: 0;
+    padding: 0;
+    text-align: left;
+    margin: 1px 0 0;
+    text-transform: initial;
+    font-weight: normal;
+  }
+
+  .contacts__phone-mobile {
+    display: inline-block;
+  }
+}

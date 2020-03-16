@@ -1,0 +1,105 @@
+.social__title {
+  margin: 0;
+  display: none;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -20px;
+  border-top: 1px solid #3f3f3f;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.social__item {
+  flex-basis: calc(100% / 3);
+  display: flex;
+
+  &:not(:first-child) {
+    border-left: 1px solid #3f3f3f;
+  }
+}
+
+.social__link {
+  width: 100%;
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: block;
+    background: url("../../img/sprite.svg") no-repeat;
+  }
+
+  &--vk:before {
+    width: 23px;
+    height: 26px;
+    background-position: -100px -1px;
+  }
+
+  &--fb:before {
+    width: 18px;
+    height: 39px;
+    background-position: -128px -1px;
+  }
+
+  &--in:before {
+    width: 36px;
+    height: 36px;
+    background-position: -151px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    margin: 0;
+    border: 1px solid #3f3f3f;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__title {
+    display: block;
+    text-align: center;
+  }
+
+  .social__list {
+    border: 0;
+    margin: 15px 0 0;
+  }
+
+  .social__item {
+    flex-shrink: 0;
+    flex-basis: 50px;
+    min-height: 50px;
+    border: 1px solid #3f3f3f;
+
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+
+  .social__link {
+    height: 50px;
+
+    &--vk:before {
+      width: 15px;
+      height: 17px;
+      background-position: -100px -31px;
+    }
+
+    &--fb:before {
+      width: 10px;
+      height: 21px;
+      background-position: -116px -31px;
+    }
+
+    &--in:before {
+      width: 19px;
+      height: 19px;
+      background-position: -75px 0;
+    }
+  }
+}
