@@ -1,22 +1,21 @@
 .header {
-
-}
-
-.header__container {
   display: flex;
   flex-direction: column;
 }
 
 .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 85px;
+  text-align: center;
 }
 
 .header__logo-img {
   width: 226px;
-  height: 30px;
+  height: 85px;
+}
+
+.header__nav {
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -27,12 +26,35 @@
   .header__logo {
     order: 2;
     height: 400px;
+    background-color: #000000;
+    background-image: url("../../img/back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .header__logo-img {
+    margin-top: 40px;
+    width: 370px;
+    height: auto;
+  }
+
+  .header__nav {
+    width: 640px;
   }
 }
 
 @media (min-width: 1200px) {
   .header__logo {
     height: 650px;
+    background-image: url("../../img/back-desktop.png");
+  }
+
+  .header__logo-img {
+    margin-top: 60px;
+  }
+
+  .header__nav {
+    width: 960px;
   }
 
 }

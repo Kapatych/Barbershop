@@ -11,11 +11,14 @@
 <body>
 
 <header class="header">
-  <div class="header__container container">
     <a class="header__logo" href="#">
-      <img class="header__logo-img" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img class="header__logo-img" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+      </picture>
     </a>
-    <nav class="nav">
+    <nav class="header__nav nav">
       <button class="nav__toggle" type="button">
         <span class="hidden">Открыть меню</span>
       </button>
@@ -62,12 +65,10 @@
       </div>
       <div class="nav__underlay"></div>
     </nav>
-  </div>
 </header>
 
 <main class="main">
   <h1 class="hidden">Барбершоп «Бородинский» – истинно мужская классика</h1>
-
   <section class="stats">
     <div class="stats__container container">
       <div class="stats__header">
