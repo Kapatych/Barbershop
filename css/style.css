@@ -423,6 +423,17 @@ img {
   padding: 0;
   list-style: none; }
 
+@media (max-width: 767.98px) {
+  .no-js .nav__toggle {
+    display: none; }
+  .no-js .site-nav__item {
+    display: block; }
+    .no-js .site-nav__item--active {
+      text-align: left; }
+  .no-js .user-panel {
+    display: block;
+    background-color: #6a4d38; } }
+
 @media (min-width: 768px) {
   .container {
     max-width: 640px; }

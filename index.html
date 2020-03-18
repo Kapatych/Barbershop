@@ -18,7 +18,7 @@
         <img class="header__logo-img" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
       </picture>
     </a>
-    <nav class="header__nav nav">
+    <nav class="header__nav nav no-js">
       <button class="nav__toggle" type="button">
         <span class="hidden">Открыть меню</span>
       </button>
@@ -257,6 +257,11 @@
 
     /// Menu
     const nav = document.querySelector('.nav');
+
+    // Menu without js
+    nav.classList.remove('no-js');
+
+    // Mobile menu
     const toggleButton = document.querySelector('.nav__toggle');
     const underlay = document.querySelector('.nav__underlay');
 
