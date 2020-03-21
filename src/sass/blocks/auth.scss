@@ -1,0 +1,140 @@
+.auth {
+
+}
+
+.auth__container {
+  padding: 31px 20px 37px;
+  width: 320px;
+  background-color: #f8f5f2;
+}
+
+.auth__title {
+  font-weight: bold;
+  color: #000000;
+}
+
+.auth__subtitle {
+  margin: 0;
+  padding: 19px 0 0;
+  color: #000000;
+  text-align: center;
+}
+
+.auth__form {
+  margin-top: 28px;
+}
+
+.auth__field {
+  margin-top: 6px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../../img/sprite.svg") no-repeat;
+  }
+
+  &--login:after {
+    width: 15px;
+    height: 15px;
+    background-position: -163px -61px;
+  }
+
+  &--password:after {
+    width: 15px;
+    height: 17px;
+    background-position: -163px -40px;
+  }
+}
+
+.auth__remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0 29px;
+
+  .option__control {
+    margin-right: 15px;
+  }
+}
+
+.auth__remember-link {
+  color: #000000;
+}
+
+.auth__submit {
+  flex-basis: 130px;
+
+  span {
+    display: none;
+  }
+}
+
+.auth__close {
+  flex-basis: 130px;
+}
+
+@media (min-width: 768px) {
+  .auth__container {
+    padding: 53px 70px 57px;
+    width: 460px;
+    background-color: #f8f5f2;
+  }
+
+  .auth__title {
+    padding: 0;
+    text-align: center;
+  }
+
+  .auth__field:after {
+    right: 26px;
+  }
+
+  .auth__remember {
+    padding: 26px 0 33px;
+  }
+
+  .auth__submit {
+    flex-basis: 100%;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .auth__close {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 15px);
+    padding: 0;
+    border: 0;
+
+    &:hover {
+      border: 0;
+
+      &:before {
+        transform: rotate(-90deg);
+        transition: all 0.2s ease-in;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+      background: url('../../img/sprite.svg') no-repeat;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}

@@ -13,9 +13,6 @@
 
 .slider__control {
   flex-basis: 50px;
-  border: 1px solid #e5ddd5;
-  background: none;
-  outline: none;
 
   &:before {
     content: "";
@@ -26,25 +23,13 @@
     background: url("../../img/sprite.svg") -99px -61px no-repeat;
   }
 
-  &:hover {
-    border: 1px solid #d5c9bd;
+  &:active:before {
+    opacity: 0.3;
   }
 
-  &:active {
-    background-color: #d5c9bd;
-
-    &:before {
-      opacity: 0.3;
-    }
+  &--next:before {
+    transform: rotate(180deg);
   }
-
-  &--next {
-
-    &:before {
-      transform: rotate(180deg);
-    }
-  }
-
 }
 
 .slider__toggles {

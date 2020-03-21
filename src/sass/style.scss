@@ -17,6 +17,10 @@ body {
   color: #f7f4f1;
   font-style: normal;
   background-color: #292929;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -98,10 +102,13 @@ img {
   }
 }
 @import "blocks/button";
+@import "blocks/form";
+@import "blocks/option";
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/site-nav";
 @import "blocks/user-panel";
+@import "blocks/auth";
 @import "blocks/stats";
 @import "blocks/slider";
 @import "blocks/advantages";
@@ -111,4 +118,5 @@ img {
 @import "blocks/contacts";
 @import "blocks/social";
 @import "blocks/copyright";
+@import "blocks/modal";
 

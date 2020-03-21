@@ -12,18 +12,6 @@
 .contacts__phone {
   margin: 18px 0 0;
   padding: 10px 0;
-  color: #ffffff;
-  border: 1px solid #3f3f3f;
-
-  &:hover {
-    border: 1px solid #545454;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    border: 1px solid transparent;
-    background-color: #252525;
-  }
 }
 
 .contacts__phone-mobile {

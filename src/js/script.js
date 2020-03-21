@@ -6,15 +6,35 @@ nav.classList.remove('no-js');
 
 // Mobile menu
 const toggleButton = document.querySelector('.nav__toggle');
-const underlay = document.querySelector('.nav__underlay');
+const navUnderlay = document.querySelector('.nav__underlay');
 
 const toggleNav = (e) => {
   e.preventDefault();
-  nav.classList.toggle('nav--opened')
+  nav.classList.toggle('nav--opened');
 };
 
 toggleButton.addEventListener('click', (e) => toggleNav(e));
-underlay.addEventListener('click', (e) => toggleNav(e));
+navUnderlay.addEventListener('click', (e) => toggleNav(e));
+
+/// Modal
+
+const modal = document.querySelector('.modal');
+const loginButton = document.querySelector('.user-panel__login');
+const modalUnderlay = document.querySelector('.modal__underlay');
+const closeButton = document.querySelector('.modal__close');
+
+const showModal = e => {
+  e.preventDefault();
+  modal.classList.toggle('modal--open');
+};
+
+loginButton.addEventListener('click', e => {
+  nav.classList.remove('nav--opened');
+  showModal(e);
+});
+modalUnderlay.addEventListener('click', e => showModal(e));
+closeButton.addEventListener('click', e => showModal(e));
+
 
 /// Slider
 const slider = (sliderName, delay) => {

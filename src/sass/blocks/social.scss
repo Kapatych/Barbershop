@@ -12,11 +12,7 @@
 .social__item {
   flex-basis: calc(100% / 3);
   display: flex;
-  border: 1px solid #3f3f3f;
-
-  &:hover {
-    border: 1px solid #545454;
-  }
+  padding: 0;
 }
 
 .social__link {
@@ -32,10 +28,8 @@
     background: url("../../img/sprite.svg") no-repeat;
   }
 
-  &:active {
-    &:before {
-      opacity: 0.3;
-    }
+  &:active:before {
+    opacity: 0.3;
   }
 
   &--vk:before {

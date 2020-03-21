@@ -7,6 +7,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: transparent;
+  outline: none;
 
   &:hover {
     border: 1px solid #d5c9bd;
@@ -15,5 +17,40 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5c9bd;
+  }
+
+  &--second {
+    color: #fff;
+    border: 1px solid #3f3f3f;
+
+    &:hover {
+      border: 1px solid #545454;
+    }
+
+    &:active {
+      color: rgba(255,255,255,.3);
+      border: 1px solid transparent;
+      background-color: transparent;
+    }
+  }
+
+  &--submit {
+    background-color: #826550;
+    border: 0;
+    color: #ffffff;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #6a4d38;
+    }
+
+    &:hover {
+      border: 0;
+      background-color: #6a4d38;
+    }
+
+    &:disabled {
+      background-color: #aeaeae;
+    }
   }
 }

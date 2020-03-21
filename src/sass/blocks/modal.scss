@@ -1,0 +1,28 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  &--open {
+    display: block;
+  }
+}
+
+.modal__content {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
+}
+
+.modal__underlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7);
+}
