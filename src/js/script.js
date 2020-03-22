@@ -37,7 +37,7 @@ closeButton.addEventListener('click', e => showModal(e));
 
 
 /// Slider
-const slider = (sliderName, delay) => {
+const addSlider = (sliderName, delay) => {
   const sliderItems = document.querySelectorAll(`.${sliderName}__item`);
   const sliderDots = document.querySelectorAll(`.${sliderName} .slider__toggle`);
   const sliderControls = document.querySelectorAll(`.${sliderName} .slider__control`);
@@ -84,7 +84,14 @@ const slider = (sliderName, delay) => {
 
 };
 
-if (document.documentElement.clientWidth < 768) {
-  slider('advantages', 2000);
+const slider = document.querySelector('.slider');
+
+if (slider) {
+  addSlider('reviews', 3000);
+
+  if (document.documentElement.clientWidth < 768) {
+    addSlider('advantages', 2000);
+  }
+
 }
-slider('reviews', 3000);
+

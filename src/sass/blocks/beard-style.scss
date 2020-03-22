@@ -1,0 +1,56 @@
+.beard-style {
+  padding: 40px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beard-style__item {
+  flex-basis: calc(100% / 3);
+  margin: 0 0 25px;
+}
+
+.beard-style__img {
+  margin: 15px 0 0;
+  background: url('../../img/sprite.svg') no-repeat;
+
+  &--admiral {
+    width: 52px;
+    height: 49px;
+    background-position: -100px -115px;
+  }
+
+  &--lumberjack {
+    width: 58px;
+    height: 68px;
+    background-position: -108px -170px;
+  }
+
+  &--polar {
+    width: 64px;
+    height: 78px;
+    background-position: -103px -251px;
+  }
+
+  &--boyar {
+    width: 58px;
+    height: 98px;
+    background-position: -174px -78px;
+  }
+
+  &--sage {
+    width: 46px;
+    height: 105px;
+    background-position: -181px -187px;
+  }
+}
+
+@media (min-width: 768px) {
+  .beard-style {
+    padding: 50px 0 0;
+  }
+
+  .beard-style__item {
+    flex-basis: calc(100% / 5);
+    margin: 0;
+  }
+}

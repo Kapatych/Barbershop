@@ -3,23 +3,42 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, ::after, ::before {
   box-sizing: inherit;
 }
 body {
   min-width: 320px;
+  height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 1;
   font-family: "PT Sans - Narrow", "Arial", sans-serif;
-  color: #f7f4f1;
+  color: #000000;
   font-style: normal;
   background-color: #292929;
 
   &.lock {
     overflow: hidden;
+  }
+}
+
+.main {
+  flex: 1 0 auto;
+  background: #f8f5f2;
+}
+
+@media (max-width: 767.98px) {
+  .main:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 34px;
+    background: url("../img/section-corner--secondary-color.svg") 0/100% 100% no-repeat;
   }
 }
 
@@ -31,18 +50,6 @@ img {
 .container {
   margin: 0 auto;
   max-width: 320px;
-}
-
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  white-space: nowrap;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
 }
 
 .title {
@@ -104,6 +111,7 @@ img {
 @import "blocks/button";
 @import "blocks/form";
 @import "blocks/option";
+@import "blocks/modal";
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/site-nav";
@@ -118,5 +126,19 @@ img {
 @import "blocks/contacts";
 @import "blocks/social";
 @import "blocks/copyright";
-@import "blocks/modal";
+@import "blocks/enroll";
+@import "blocks/add-services";
+@import "blocks/beard-style";
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 

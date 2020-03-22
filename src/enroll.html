@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/PTSansNarrow.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSansNarrowBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Записаться</title>
+</head>
+<body class="inner-page">
+
+<header class="header">
+  <a class="header__logo" href="/">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+      <img class="header__logo-img" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+    </picture>
+  </a>
+  <nav class="header__nav nav no-js">
+    <button class="nav__toggle" type="button">
+      <span class="hidden">Открыть меню</span>
+    </button>
+    <div class="nav__content">
+      <ul class="nav__list site-nav list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="/">
+            <span>Главная</span>
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="/portfolio.html">
+            <span>Наши работы</span>
+          </a>
+        </li>
+        <li class="site-nav__item site-nav__item--active">
+          <a class="site-nav__link" href="/enroll.html">
+            <span>Записаться</span>
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">
+            <span>Контакты</span>
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">
+            <span>HTML Academy</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list user-panel list">
+        <li class="user-panel__item">
+          <a class="user-panel__login" href="#">
+            <svg class="user-panel__login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                 height="16" fill="#fff">
+              <path d="M0 7h7.01V4.06l3.95 3.95-3.95 3.9V9.06L0 9.02V7z"></path>
+              <path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z"></path>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav__underlay"></div>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="enroll">
+    <div class="enroll__container container">
+      <div class="enroll__header">
+        <h1 class="enroll__title title">Запись на стрижку</h1>
+        <a class="enroll__return button" href="/">На главную</a>
+      </div>
+
+      <form class="enroll__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset">
+          <legend class="hidden">ФИО</legend>
+          <div class="enroll__bio">
+            <input class="form__input"
+                   type="text" name="last-name"
+                   placeholder="Фамилия"
+                   aria-label="Фамилия"
+                   autocomplete="off"
+                   required>
+            <input class="form__input"
+                   type="text"
+                   name="first-name"
+                   placeholder="Имя"
+                   aria-label="Имя"
+                   autocomplete="off"
+                   required>
+            <input class="form__input"
+                   type="text"
+                   name="patronymic"
+                   placeholder="Отчество"
+                   aria-label="Отчество"
+                   autocomplete="off">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="hidden">Контакты для связи</legend>
+          <div class="enroll__contacts">
+            <input class="form__input"
+                   type="tel"
+                   name="phone"
+                   placeholder="Контактный телефон"
+                   aria-label="Контактный телефон"
+                   autocomplete="off"
+                   required>
+            <input class="form__input"
+                   type="email"
+                   name="email"
+                   placeholder="Контактный e-mail"
+                   aria-label="Контактный e-mail"
+                   autocomplete="off"
+                   required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="hidden">Дополнительная информация</legend>
+          <textarea class="form__input form__input--textarea"
+                    name="comment"
+                    placeholder="Доп. информация для мастера"
+                    aria-label="Доп. информация для мастера"
+                    autocomplete="off"></textarea>
+        </fieldset>
+
+        <fieldset class="form__fieldset enroll__fieldset">
+          <legend class="enroll__legend">Выберите модель бороды:</legend>
+          <ul class="beard-style list">
+            <li class="beard-style__item">
+              <label class="option option--col">
+                <input class="option__native hidden"
+                       type="radio"
+                       name="beard-style"
+                       value="admiral"
+                       checked>
+                <span class="option__control option__control--radio"></span>
+                <span class="option__title">адмирал</span>
+                <span class="beard-style__img beard-style__img--admiral"></span>
+              </label>
+            </li>
+            <li class="beard-style__item">
+              <label class="option option--col">
+                <input class="option__native hidden"
+                       type="radio"
+                       name="beard-style"
+                       value="lumberjack">
+                <span class="option__control option__control--radio"></span>
+                <span class="option__title">лесоруб</span>
+                <span class="beard-style__img beard-style__img--lumberjack"></span>
+              </label>
+            </li>
+            <li class="beard-style__item">
+              <label class="option option--col">
+                <input class="option__native hidden"
+                       type="radio"
+                       name="beard-style"
+                       value="polar">
+                <span class="option__control option__control--radio"></span>
+                <span class="option__title">полярник</span>
+                <span class="beard-style__img beard-style__img--polar"></span>
+              </label>
+            </li>
+            <li class="beard-style__item">
+              <label class="option option--col">
+                <input class="option__native hidden"
+                       type="radio"
+                       name="beard-style"
+                       value="boyar">
+                <span class="option__control option__control--radio"></span>
+                <span class="option__title">боярин</span>
+                <span class="beard-style__img beard-style__img--boyar"></span>
+              </label>
+            </li>
+            <li class="beard-style__item">
+              <label class="option option--col">
+                <input class="option__native hidden"
+                       type="radio"
+                       name="beard-style"
+                       value="sage">
+                <span class="option__control option__control--radio"></span>
+                <span class="option__title">мудрец</span>
+                <span class="beard-style__img beard-style__img--sage"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset enroll__fieldset">
+          <legend class="enroll__legend">Дополнительные услуги:</legend>
+          <ul class="add-services list">
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="tint beard"
+                       checked>
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Подкрасить бороду</span>
+              </label>
+            </li>
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="wind mustache">
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Накрутить усы</span>
+              </label>
+            </li>
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="comb beard">
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Причесать бороду</span>
+              </label>
+            </li>
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="trim temple">
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Подровнять виски</span>
+              </label>
+            </li>
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="remove gray hair">
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Убрать седину</span>
+              </label>
+            </li>
+            <li class="add-services__item">
+              <label class="option">
+                <input class="option__native hidden"
+                       type="checkbox"
+                       name="services"
+                       value="polish bald head">
+                <span class="option__control option__control--checkbox"></span>
+                <span class="option__title">Отполировать лысину</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="button button--submit enroll__submit">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__contacts contacts">
+      <p class="contacts__title">Барбершоп Бородинский</p>
+      <p class="contacts__text">
+        г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+        <a class="contacts__phone button button--second" href="tel:+78121111111">
+          <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 111-11-11
+        </a>
+      </p>
+    </div>
+    <div class="footer__social social">
+      <p class="social__title">Давайте дружить!</p>
+      <ul class="social__list list">
+        <li class="social__item button button--second">
+          <a class="social__link social__link--vk" href="#"></a>
+        </li>
+        <li class="social__item button button--second">
+          <a class="social__link social__link--fb" href="#"></a>
+        </li>
+        <li class="social__item button button--second">
+          <a class="social__link social__link--in" href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link button button--second" href="">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal modal__auth auth">
+  <div class="modal__content auth__container">
+    <h2 class="auth__title title">Личный кабинет</h2>
+    <p class="auth__subtitle">Введите свой логин и пароль, чтобы войти</p>
+    <form class="auth__form form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__field auth__field auth__field--login">
+        <input class="form__input"
+               type="text"
+               name="login"
+               placeholder="Логин"
+               autocomplete="off"
+               aria-label="Введите логин"
+               required>
+      </div>
+      <div class="form__field auth__field auth__field--password">
+        <input class="form__input"
+               type="password"
+               name="password"
+               placeholder="Пароль"
+               autocomplete="off"
+               aria-label="Введите пароль"
+               required>
+      </div>
+      <div class="auth__remember">
+        <label class="option">
+          <input class="option__native hidden" type="checkbox">
+          <span class="option__control option__control--checkbox"></span>
+          Запомните меня
+        </label>
+        <a class="auth__remember-link" href="#">Я забыл пароль!</a>
+      </div>
+      <div class="form__buttons">
+        <button class="button button--submit auth__submit" type="submit">
+          Войти <span>в личный кабинет</span>
+        </button>
+        <button class="button auth__close modal__close" type="button" aria-label="Закрыть окно">
+          <span>Закрыть</span>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="modal__underlay"></div>
+</div>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

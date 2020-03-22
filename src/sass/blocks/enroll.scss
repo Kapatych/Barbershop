@@ -1,0 +1,121 @@
+.enroll {
+  //background-color: #f8f5f2;
+}
+
+.enroll__container {
+  padding: 30px 20px 40px;
+}
+
+.enroll__title {
+  padding: 0;
+  //color: #000000;
+}
+
+.enroll__return {
+  display: none;
+  font-size: 18px;
+}
+
+.enroll__form {}
+
+.enroll__legend {
+  margin: 0;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.enroll__textarea {
+  min-height: 112px;
+}
+
+.enroll__submit {
+  margin: 27px 0 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .enroll {
+    font-size: 24px;
+  }
+
+  .enroll__container {
+    padding: 60px 0 75px;
+  }
+
+  .enroll__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .enroll__return {
+    display: block;
+    flex-basis: 160px;
+  }
+
+  .enroll__form {
+    margin: 65px 0 0;
+
+    .form__input {
+      margin: 0;
+    }
+  }
+
+  .enroll__bio {
+    display: flex;
+    justify-content: space-between;
+
+    .form__input {
+      width: calc(100% / 3);
+
+      &:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
+
+  .enroll__contacts .form__input:nth-child(2) {
+    margin: 35px 0 0;
+  }
+
+  .enroll__fieldset {
+    border-top: 1px solid #e5ddd5;
+    margin: 60px 0 0;
+  }
+
+  .enroll__legend {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 25px;
+  }
+
+  .enroll__submit {
+    margin: 12px 0 0;
+    padding: 23px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .enroll__bio .form__input {
+    width: calc((100% - 70px) / 3);
+  }
+
+  .enroll__contacts {
+    display: flex;
+    justify-content: space-between;
+
+    .form__input {
+      width: calc((100% - 35px) / 2);
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
+  }
+
+  .enroll__submit {
+    margin: 33px 0 0;
+  }
+
+}

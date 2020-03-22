@@ -1,0 +1,26 @@
+.add-services {
+  padding: 40px 0 0;
+}
+
+.add-services__item {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 768px) {
+  .add-services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .add-services__item {
+    flex-basis: 50%;
+    margin: 0 0 47px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .add-services__item {
+    flex-basis: calc(100% / 3);
+  }
+}
+

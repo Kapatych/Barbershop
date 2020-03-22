@@ -2,16 +2,21 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  &--col {
+    flex-direction: column;
+
+    .option__title {
+      margin: 20px 0 0;
+    }
+  }
 }
 
 .option__control {
   position: relative;
   display: block;
-  width: 33px;
-  height: 33px;
   border: 1px solid #e5ddd5;
   background-color: #ffffff;
-  outline: none;
 
   &:before {
     content: "";
@@ -19,12 +24,58 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &--checkbox {
+    margin: 0 25px 0 0;
+    width: 33px;
+    height: 33px;
+  }
+
+  &--radio {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+}
+
+.option__native:focus + .option__control, .option__native:hover + .option__control {
+  border: 1px solid #d5c9bd;
+}
+
+.option__native:active + .option__control {
+  background-color: #d5c9bd;
+
+  &--checkbox:before {
     width: 22px;
     height: 16px;
-    background: url('../../img/sprite.svg') no-repeat;
+    background: url('../../img/sprite.svg') -134px -50px no-repeat;
+  }
+
+  &--radio:before {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e5ddd5;
+    background-color: #ffffff;
+    border-radius: 50%;
   }
 }
 
 .option__native:checked + .option__control--checkbox:before {
-  background-position: -134px -50px;
+  width: 22px;
+  height: 16px;
+  background: url('../../img/sprite.svg') -134px -50px no-repeat;
 }
+
+.option__native:checked:active + .option__control--checkbox:before {
+  background: none;
+}
+
+.option__native:checked + .option__control--radio:before {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e5ddd5;
+  border-radius: 50%;
+}
+
+

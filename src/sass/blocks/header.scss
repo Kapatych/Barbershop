@@ -31,6 +31,20 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
+  .inner-page .header__logo {
+    position: relative;
+    height: 210px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      background: url('../../img/section-corner--primary-color.svg') 0/100% 100% no-repeat;
+    }
+  }
 
   .header__logo-img {
     margin-top: 40px;
@@ -47,6 +61,10 @@
   .header__logo {
     height: 650px;
     background-image: url("../../img/back-desktop.png");
+  }
+
+  .inner-page .header__logo {
+    height: 310px;
   }
 
   .header__logo-img {

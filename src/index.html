@@ -13,7 +13,7 @@
 <body>
 
 <header class="header">
-  <a class="header__logo" href="#">
+  <a class="header__logo" href="/">
     <picture>
       <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -27,17 +27,17 @@
     <div class="nav__content">
       <ul class="nav__list site-nav list">
         <li class="site-nav__item  site-nav__item--active">
-          <a class="site-nav__link" href="#">
+          <a class="site-nav__link" href="/">
             <span>Главная</span>
           </a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">
+          <a class="site-nav__link" href="/portfolio.html">
             <span>Наши работы</span>
           </a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">
+          <a class="site-nav__link" href="/enroll.html">
             <span>Записаться</span>
           </a>
         </li>
@@ -262,10 +262,22 @@
       <p class="auth__subtitle">Введите свой логин и пароль, чтобы войти</p>
       <form class="auth__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__field auth__field auth__field--login">
-          <input class="form__input" type="text" name="login" placeholder="Логин" required>
+          <input class="form__input"
+                 type="text"
+                 name="login"
+                 placeholder="Логин"
+                 autocomplete="off"
+                 aria-label="Введите логин"
+                 required>
         </div>
         <div class="form__field auth__field auth__field--password">
-          <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+          <input class="form__input"
+                 type="password"
+                 name="password"
+                 placeholder="Пароль"
+                 autocomplete="off"
+                 aria-label="Введите пароль"
+                 required>
         </div>
         <div class="auth__remember">
           <label class="option">
@@ -279,7 +291,7 @@
           <button class="button button--submit auth__submit" type="submit">
             Войти <span>в личный кабинет</span>
           </button>
-          <button class="button auth__close modal__close" type="button">
+          <button class="button auth__close modal__close" type="button" aria-label="Закрыть окно">
             <span>Закрыть</span>
           </button>
         </div>
@@ -287,6 +299,7 @@
   </div>
   <div class="modal__underlay"></div>
 </div>
+
 <script src="js/script.min.js"></script>
 </body>
 </html>

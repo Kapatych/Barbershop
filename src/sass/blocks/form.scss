@@ -1,5 +1,5 @@
 .form {
-  color: #000000;
+  //color: #000000;
 }
 
 .form__field {
@@ -7,10 +7,25 @@
 }
 
 .form__input {
+  margin: 6px 0 0;
   padding: 9px 18px;
   width: 100%;
   line-height: 30px;
   border: 1px solid #e5ddd5;
+
+  &--textarea {
+    resize: none;
+    min-height: 112px;
+  }
+
+  &:hover {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #999999;
+  }
 }
 
 .form__buttons {
@@ -18,9 +33,18 @@
   justify-content: space-between;
 }
 
+.form__fieldset {
+  margin: 35px 0 0;
+  padding: 0;
+  border: 0;
+}
+
 @media (min-width: 768px) {
   .form__input {
     padding: 19px 24px;
-    font-size: 24px;
+  }
+
+  .form__input--textarea {
+    min-height: 211px;
   }
 }
