@@ -138,7 +138,11 @@
 
   <section class="news">
     <div class="news__container container">
-      <h2 class="news__title title">Новости и акции</h2>
+      <div class="headline">
+        <h2 class="title">Новости и акции</h2>
+        <a class="headline__button button" href="#">Показать все</a>
+      </div>
+
       <ul class="news__list list">
         <li class="news__item">
           <time class="news__date" datetime="2020-03-01">
@@ -178,8 +182,10 @@
 
   <section class="reviews">
     <div class="reviews__container container">
-      <h2 class="reviews__title title">Отзывы о нас</h2>
-      <a class="reviews__button button" href="#">Оставить свой</a>
+      <div class="headline">
+        <h2 class="title">Отзывы о нас</h2>
+        <a class="headline__button button" href="#">Оставить свой</a>
+      </div>
 
       <div class="reviews__wrapper slider">
         <button class="reviews__control slider__control slider__control--prev button" type="button">
@@ -222,6 +228,68 @@
       </div>
     </div>
   </section>
+
+  <section class="price">
+    <div class="price__container container">
+      <div class="headline">
+        <h1 class="price__title title">Прейскурант</h1>
+      </div>
+      <div class="price__content">
+        <table class="price__table">
+          <tbody>
+          <tr>
+            <td class="price__table-num">1</td>
+            <td class="price__table-title">
+              Классическая стрижка
+              <p class="price__table-subtitle">(с мытьём головы)</p>
+            </td>
+            <td class="price__table-desc">с мытьём головы</td>
+            <td class="price__table-cost">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="price__table-num">2</td>
+            <td class="price__table-title">
+              Современный вариант
+              <p class="price__table-subtitle">(с мытьём головы)</p>
+            </td>
+            <td class="price__table-desc">с мытьём головы</td>
+            <td class="price__table-cost">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="price__table-num">3</td>
+            <td class="price__table-title">
+              Индивидуальный подход
+              <p class="price__table-subtitle">(с мытьём головы)</p>
+            </td>
+            <td class="price__table-desc">с мытьём головы</td>
+            <td class="price__table-cost">2 000 руб.</td>
+          </tr>
+          <tr>
+            <td class="price__table-num">4</td>
+            <td class="price__table-title">
+              Бритьё бороды
+              <p class="price__table-subtitle">(без мытья)</p>
+            </td>
+            <td class="price__table-desc">без мытья</td>
+            <td class="price__table-cost">500 руб.</td>
+          </tr>
+          <tr>
+            <td class="price__table-num">5</td>
+            <td class="price__table-title">
+              Бритьё головы
+              <p class="price__table-subtitle">(с мытьём головы)</p>
+            </td>
+            <td class="price__table-desc">с мытьём головы</td>
+            <td class="price__table-cost">1 000 руб.</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="price__discount">
+          <p class="price__discount-text">C 10:00 до 14:00 скидка 20%</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
@@ -258,44 +326,44 @@
 
 <div class="modal modal__auth auth">
   <div class="modal__content auth__container">
-      <h2 class="auth__title title">Личный кабинет</h2>
-      <p class="auth__subtitle">Введите свой логин и пароль, чтобы войти</p>
-      <form class="auth__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__field auth__field auth__field--login">
-          <input class="form__input"
-                 type="text"
-                 name="login"
-                 placeholder="Логин"
-                 autocomplete="off"
-                 aria-label="Введите логин"
-                 required>
-        </div>
-        <div class="form__field auth__field auth__field--password">
-          <input class="form__input"
-                 type="password"
-                 name="password"
-                 placeholder="Пароль"
-                 autocomplete="off"
-                 aria-label="Введите пароль"
-                 required>
-        </div>
-        <div class="auth__remember">
-          <label class="option">
-            <input class="option__native hidden" type="checkbox">
-            <span class="option__control option__control--checkbox"></span>
-            <span class="option__title">Запомните меня</span>
-          </label>
-          <a class="auth__remember-link" href="#">Я забыл пароль!</a>
-        </div>
-        <div class="form__buttons">
-          <button class="button button--submit auth__submit" type="submit">
-            Войти <span>в личный кабинет</span>
-          </button>
-          <button class="button auth__close modal__close" type="button" aria-label="Закрыть окно">
-            <span>Закрыть</span>
-          </button>
-        </div>
-      </form>
+    <h2 class="auth__title title">Личный кабинет</h2>
+    <p class="auth__subtitle">Введите свой логин и пароль, чтобы войти</p>
+    <form class="auth__form form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__field auth__field auth__field--login">
+        <input class="form__input"
+               type="text"
+               name="login"
+               placeholder="Логин"
+               autocomplete="off"
+               aria-label="Введите логин"
+               required>
+      </div>
+      <div class="form__field auth__field auth__field--password">
+        <input class="form__input"
+               type="password"
+               name="password"
+               placeholder="Пароль"
+               autocomplete="off"
+               aria-label="Введите пароль"
+               required>
+      </div>
+      <div class="auth__remember">
+        <label class="option">
+          <input class="option__native hidden" type="checkbox">
+          <span class="option__control option__control--checkbox"></span>
+          <span class="option__title">Запомните меня</span>
+        </label>
+        <a class="auth__remember-link" href="#">Я забыл пароль!</a>
+      </div>
+      <div class="form__buttons">
+        <button class="button button--submit auth__submit" type="submit">
+          Войти <span>в личный кабинет</span>
+        </button>
+        <button class="button auth__close modal__close" type="button" aria-label="Закрыть окно">
+          <span>Закрыть</span>
+        </button>
+      </div>
+    </form>
   </div>
   <div class="modal__underlay"></div>
 </div>

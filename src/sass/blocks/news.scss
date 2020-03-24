@@ -1,6 +1,4 @@
 .news {
-  //background-color: #f8f5f2;
-  //color: #000000;
   border-bottom: 1px solid #e5ddd5;
 }
 
@@ -9,9 +7,7 @@
 }
 
 .news__list {
-  margin: 0;
-  padding: 15px 0 0;
-  list-style: none;
+  margin-top: -13px;
 }
 
 .news__item {
@@ -101,17 +97,12 @@
 
 @media (min-width: 768px) {
   .news__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px 0 35px;
   }
 
   .news__list {
-    order: 2;
+    margin: 0;
     display: flex;
-    padding: 35px 0 0;
   }
 
   .news__item {
@@ -124,8 +115,7 @@
   }
 
   .news__button {
-    margin: 0;
-    flex-basis: 160px;
+    display: none;
   }
 }
 

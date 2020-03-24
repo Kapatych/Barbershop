@@ -1,0 +1,152 @@
+.price {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+.price__container {
+  padding: 35px 20px 54px;
+  margin-bottom: -34px;
+}
+
+.price__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.price__table-num, .price__table-desc {
+  display: none;
+}
+
+.price__table-title {
+  padding-bottom: 10px;
+  width: 190px;
+  font-weight: bold;
+}
+.price__table-subtitle {
+  margin: 0;
+  font-weight: normal;
+}
+
+.price__table-cost {
+  vertical-align: top;
+  text-align: right;
+}
+
+.price__discount {
+  margin-top: 20px;
+  padding: 16px 20px 18px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #494949;
+
+  &:before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    margin-right: 35px;
+    width: 58px;
+    height: 58px;
+    background: url("../../img/price__clock-icon.svg") no-repeat;
+  }
+}
+
+.price__discount-text {
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@media (min-width: 768px) {
+  .price__container {
+    padding: 43px 0 54px;
+    margin-bottom: 0;
+  }
+
+  .price__table {
+    td {
+      padding: 14px 20px;
+      border: 1px solid #4a4a4a;
+    }
+  }
+
+  .price__table-num {
+    display: table-cell;
+    text-align: center;
+  }
+
+  .price__table-desc {
+    display: table-cell;
+  }
+
+  .price__table-title {
+    width: 250px;
+  }
+
+  .price__table-subtitle {
+    display: none;
+  }
+
+  .price__table-cost {
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .price__discount {
+    margin-top: 10px;
+    padding: 21px 27px;
+
+    &:before {
+      margin-right: 0;
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  .price__discount-text {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__container {
+    padding: 55px 0;
+    margin-bottom: 0;
+  }
+
+  .price__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__table {
+    flex-basis: 630px;
+  }
+
+  .price__discount {
+    margin-top: 0;
+    padding: 35px 65px 25px;
+    flex-basis: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:before {
+      width: 142px;
+      height: 142px;
+    }
+  }
+
+  .price__discount-text {
+    flex-grow: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
+}

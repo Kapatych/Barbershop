@@ -104,14 +104,12 @@ img {
     max-width: 960px;
   }
 
-  .title {
-    padding-left: 70px;
-  }
 }
 @import "blocks/button";
 @import "blocks/form";
 @import "blocks/option";
 @import "blocks/modal";
+@import "blocks/headline";
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/site-nav";
@@ -129,6 +127,8 @@ img {
 @import "blocks/enroll";
 @import "blocks/add-services";
 @import "blocks/beard-style";
+@import "blocks/portfolio";
+@import "blocks/price";
 
 .hidden {
   position: absolute;

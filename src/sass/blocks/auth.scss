@@ -8,11 +8,6 @@
   background-color: #f8f5f2;
 }
 
-.auth__title {
-  font-weight: bold;
-  color: #000000;
-}
-
 .auth__subtitle {
   margin: 0;
   padding: 19px 0 0;
@@ -25,7 +20,6 @@
 }
 
 .auth__field {
-  //margin-top: 6px;
 
   &:after {
     content: "";
@@ -85,7 +79,6 @@
   }
 
   .auth__title {
-    padding: 0;
     text-align: center;
   }
 

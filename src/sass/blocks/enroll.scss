@@ -1,22 +1,6 @@
-.enroll {
-  //background-color: #f8f5f2;
-}
-
 .enroll__container {
   padding: 30px 20px 40px;
 }
-
-.enroll__title {
-  padding: 0;
-  //color: #000000;
-}
-
-.enroll__return {
-  display: none;
-  font-size: 18px;
-}
-
-.enroll__form {}
 
 .enroll__legend {
   margin: 0;
@@ -44,22 +28,8 @@
     padding: 60px 0 75px;
   }
 
-  .enroll__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .enroll__return {
-    display: block;
-    flex-basis: 160px;
-  }
-
-  .enroll__form {
-    margin: 65px 0 0;
-
-    .form__input {
-      margin: 0;
-    }
+  .enroll__form .form__input {
+    margin: 0;
   }
 
   .enroll__bio {

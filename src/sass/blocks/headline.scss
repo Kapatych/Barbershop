@@ -1,0 +1,22 @@
+.headline {
+  margin: 0 0 30px;
+}
+
+.headline__button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 35px;
+  }
+
+  .headline__button {
+    display: block;
+    flex-basis: 160px;
+    font-size: 18px;
+  }
+}
