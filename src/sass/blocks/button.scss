@@ -9,7 +9,7 @@
   text-decoration: none;
   background-color: transparent;
 
-  &:hover {
+  &:hover, &:focus {
     border: 1px solid #d5c9bd;
   }
 
@@ -27,7 +27,7 @@
     }
 
     &:active {
-      color: rgba(255,255,255,.3);
+      color: rgba(255, 255, 255, .3);
       border: 1px solid transparent;
       background-color: transparent;
     }

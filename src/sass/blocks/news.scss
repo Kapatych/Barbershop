@@ -125,8 +125,13 @@
     padding: 53px 0 40px;
   }
 
+  .news__list {
+    flex-wrap: wrap;
+  }
+
   .news__item {
     padding: 13px 30px 0 0;
+    flex-basis: calc(100% / 3);
 
     &:not(:nth-child(-n + 2)) {
       display: flex;
