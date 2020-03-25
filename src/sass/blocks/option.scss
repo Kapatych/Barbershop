@@ -49,7 +49,7 @@
   &--checkbox:before {
     width: 22px;
     height: 16px;
-    background: url('../../img/sprite.svg') -134px -50px no-repeat;
+    background: url('../img/sprite.svg') -134px -50px no-repeat;
   }
 
   &--radio:before {
@@ -64,7 +64,7 @@
 .option__native:checked + .option__control--checkbox:before {
   width: 22px;
   height: 16px;
-  background: url('../../img/sprite.svg') -134px -50px no-repeat;
+  background: url('../img/sprite.svg') -134px -50px no-repeat;
 }
 
 .option__native:checked:active + .option__control--checkbox:before {

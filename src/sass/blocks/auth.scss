@@ -28,7 +28,7 @@
     right: 19px;
     top: 50%;
     transform: translateY(-50%);
-    background: url("../../img/sprite.svg") no-repeat;
+    background: url("../img/sprite.svg") no-repeat;
   }
 
   &--login:after {
@@ -123,7 +123,7 @@
       display: block;
       width: 26px;
       height: 26px;
-      background: url('../../img/sprite.svg') no-repeat;
+      background: url('../img/sprite.svg') no-repeat;
     }
 
     span {

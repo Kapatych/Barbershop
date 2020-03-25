@@ -28,7 +28,7 @@
       transform: translate(-50%, -50%);
       width: 36px;
       height: 19px;
-      background: url(../../img/sprite.svg) -31px 0 no-repeat;
+      background: url('../img/sprite.svg') -31px 0 no-repeat;
     }
   }
 
@@ -63,7 +63,7 @@
       &:before {
         width: 26px;
         height: 25px;
-        background: url(../../img/sprite.svg) 0 0 no-repeat;
+        background: url('../img/sprite.svg') 0 0 no-repeat;
       }
     }
 
